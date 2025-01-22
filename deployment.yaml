@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reddit-clone-app:1.0.0-8
+      app: reddit-clone-app-1.0.0-8
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: reddit-clone-app:1.0.0-8
-          image: zylmaimun/reddit-clone-pipeline:1.0.0-1
+          image: zylmaimun/reddit-clone-app:1.0.0-1
           resources:
             limits:
               cpu: "1"
