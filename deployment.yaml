@@ -13,7 +13,7 @@ spec:
         app: reddit-clone-app-1.0.0-12
     spec:
       containers:
-        - name: reddit-clone-app-1.0.0-12
+        - name: reddit-clone-app-1-0-0-12
           image: zylmaimun/reddit-clone-pipeline-1.0.0-10
           resources:
             limits:
