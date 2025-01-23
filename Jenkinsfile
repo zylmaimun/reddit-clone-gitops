@@ -23,6 +23,15 @@ pipeline {
                 """
             }
         }
+        stage("Update the Service Tags") {
+            steps {
+                sh """
+                    cat service.yaml
+                    sed -i 's/${APP_NAME}.*/${APP_NAME}-${IMAGE_TAG}/g' service.yaml
+                    cat service.yaml
+                """
+            }
+        }
         stage("Push the changed deployment file to GitHub") {
             steps {
                 sh """
