@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: reddit-clone-service
   labels:
-    app: reddit-clone-app-1-24
+    app: reddit-clone-app-1-25
 spec:
   selector:
-    app: reddit-clone-app-1-24
+    app: reddit-clone-app-1-25
 
   ports:
     - port: 3000
